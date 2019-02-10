@@ -8,6 +8,7 @@ RUN npm install --global nodemon
 RUN mkdir src
 WORKDIR /src
 ADD src/package.json /src/package.json
+ADD src/package-lock.json /src/package-lock.json
 RUN npm install
 
 # Development app runs on port 3000
